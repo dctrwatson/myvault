@@ -3,7 +3,7 @@ myvault.sh
 ==========
 
 :Version: 1.0.0
-:Web: http://www.dctrwatson.com/introducing-myvault
+:Web: http://www.dctrwatson.com/2010/10/introducting-myvault
 :Download: http://github.com/dctrwatson/myvault
 
 myvault.sh is a shell script for editing an ecrypted text file stored as ``$HOME/.myvault``
@@ -17,13 +17,14 @@ method.
 
 Requirements
 ============
- - **OpenSSL**
+- OpenSSL
 
 Setup
 =====
 
 If you do not already have an RSA key generated, use the following command to do so.::
-   $ ssh-keygen -t rsa -b 4096
+
+    $ ssh-keygen -t rsa -b 4096
 
 * Note: It's **HIGHLY RECOMMENDED** to use a passphrase on the key.
 
@@ -49,11 +50,8 @@ Usage
 
 Notes
 -----
+``myvault.sh`` uses the **EDITOR** and **TMPDIR** environment variables for some configuration.
 
-By default the script uses the environment variables:
-``$EDITOR``  
-``$TMPDIR``  
-
-If ``$EDITOR`` is not defined, it defaults to ``vim``.
+If **EDITOR** is not defined, it defaults to ``vim``.
 
 .. # vim: syntax=rst expandtab tabstop=4 shiftwidth=4 shiftround
